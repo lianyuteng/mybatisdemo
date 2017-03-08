@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xing.model.Address">
+	 <resultMap id="addressResultMap" type="com.xing.model.Address"> 
+	    <id property="id" column="t_id"/>
+	    <result property="type" column="t_type"/>
+     </resultMap>
+    
+    
+</mapper>	

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xing.model.User2">
+
+    <select id="select" parameterType="int" resultType="com.xing.model.Address">  
+        select t_id  ,t_type as type from address a  
+             where a.t_id = #{id}  
+    </select>  
+	
+	<select id="select2" parameterType="String" resultMap="com.xing.model.Address.addressResultMap">  
+        select t_id  ,t_type  from address a  
+             where a.t_type = #{type}  
+    </select>  
+    
+    <select id="select2_1" parameterType="java.util.HashMap" resultMap="com.xing.model.Address.addressResultMap">  
+        select t_id  ,t_type  from address a  
+             where a.t_type = #{type}  
+    </select>  
+    
+    <select id="select3" parameterType="int" resultMap="com.xing.model.Address.addressResultMap">  
+        select t_id  ,t_type  from address a  
+             where a.t_type = 1  
+    </select> 
+</mapper>	

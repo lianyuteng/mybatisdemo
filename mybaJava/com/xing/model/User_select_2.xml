@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xing.model.User3">
+
+    <select id="select" parameterType="com.xing.model.User" resultType="com.xing.model.User" >  
+        select username,password,type,id from user u 
+        	<where>
+        		1=1
+        		<if test="username != null">
+        			and u.username = #{username}
+        		</if>
+        		<if test="id != 0">
+        			and u.id = #{id}
+        		</if>
+        	</where> 
+    </select>
+
+
+     <select id="select2" parameterType="java.util.HashMap" resultType="com.xing.model.User">  
+        select username,password,type,id from user u where 1=1
+        	<choose>
+        		<when test="username != null">
+        			and u.username = #{username}
+        		</when>
+        		<otherwise>
+        			and u.id = #{id}
+        		</otherwise>
+        	</choose>
+    </select>
+    
+    <select id="select3" parameterType="java.util.HashMap" resultType="com.xing.model.User" statementType="STATEMENT">  
+        select username,password,type,id from user u where 1=1
+           <choose>
+        		<when test="username != null">
+        			and u.username = '${hello}'
+        		</when>
+        		<otherwise>
+        			and u.id = ${id}
+        		</otherwise>
+        	</choose>
+    </select>
+    
+    <select id="select4" parameterType="java.util.HashMap" resultType="com.xing.model.User">  
+        select username,password,type,id from user u 
+        	<trim prefix="where" prefixOverrides="and | or">
+        		<if test="username != null">
+        			and u.username = #{hello}
+        		</if>
+        		<if test="id !=0">
+        			and u.id = #{id}
+        		</if>
+        	</trim>
+    </select> 
+    
+   	<update id="update" parameterType="com.xing.model.User">
+		update user 
+		<set>
+			<if test="username !=null">
+				username=#{username},
+			</if>
+			<if test="password !=null">
+				password=#{password},
+			</if>
+			<if test="type !=null">
+				type=#{type}
+			</if>			
+		</set>
+		<where>
+			id=#{id}
+		</where>
+	</update> 
+	
+    <select id="select5" parameterType="java.util.HashMap" resultType="com.xing.model.User">  
+        select username,password,type,id from user u 
+        <where>
+        	1=1 and u.id in 
+        	<foreach collection="list" item="ids" open="(" separator="," close=")">
+        		#{ids}
+        	</foreach>
+        </where>
+    </select> 	 
+    
+    <select id="select6" parameterType="java.util.HashMap" resultType="com.xing.model.User">  
+        select username,password,type,id from user u 
+        <where>
+        	1=1 and u.id in 
+        	<foreach collection="array" item="ids" open="(" separator="," close=")">
+        		#{ids}
+        	</foreach>
+        </where>
+    </select> 	      
+</mapper>	

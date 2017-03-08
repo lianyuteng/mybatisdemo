@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xing.model.User">
+	<!-- 插入一条数据 -->
+	<insert id="add" parameterType="com.xing.model.User">
+		insert into user (id,username,password,type) 
+		value(#{id},#{username},#{password},#{type})
+	</insert>          
+	<insert id="add2" >
+		insert into user (id,name,password) 
+		value(22,'aaaa','cccc')
+	</insert>
+	
+	<!-- 删除一条数据 -->
+	<delete id="delete" parameterType="int" >  
+        delete from user where id = #{id} 
+    </delete>
+	<!-- 更新一条数据 -->
+	<update id="update" parameterType="com.xing.model.User">
+		update user set username=#{username} ,password=#{password},
+		type=#{type} where id=#{id}
+	</update>
+	
+	<!-- 查询，根据id   1个参数一个结果-->  
+    <select id="select" parameterType="int" resultType="com.xing.model.User">  
+        select name ,password,id from user u  
+             where u.id = #{id}  
+    </select>  
+    
+    <!-- 查询，返回多个结果   一个参数多个结果-->  
+    <select id="select_list" parameterType="String" resultType="com.xing.model.User">  
+        select username,password,type,id from user u  
+             where u.type = #{type}  
+    </select>
+    
+    	<!-- 查询，根据map参数   结果-->  
+    <select id="select_map" parameterType="map" resultType="com.xing.model.User">  
+        select username,password,type,id from user u  
+             where u.type = #{type}  
+    </select> 
+    
+        	<!-- 查询，   结果map-->  
+    <select id="select_list_map" parameterType="String" resultType="java.util.HashMap">  
+        select username,password,type,id from user u  
+             where u.type = #{type}  
+    </select>  
+    
+            	<!-- 查询，   结果map-->  
+    <select id="select_list_map2" parameterType="String" resultType="java.util.HashMap">  
+        select u.username as u_username,u.password as u_password,u.type as u_type,u.id as u_id,a.t_id as a_id,a.t_type as a_type from user u,address a  
+             where u.id=a.t_id and u.type = #{type}  
+    </select>  
+</mapper>	

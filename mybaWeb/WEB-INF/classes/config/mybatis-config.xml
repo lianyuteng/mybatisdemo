@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="config/jdbc.properties" />
+	<environments default="shengchan">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+				<property name="driver" value="${driver}" />
+			</dataSource>
+		</environment>
+		<environment id="shengchan">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+				<property name="driver" value="${driver}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+
+		<mapper resource="com/xing/model/User_select_0.xml" />
+		<!-- <mapper resource="com/xing/model/User_select_1.xml"/> <mapper resource="com/xing/model/User_select_2.xml"/> 
+			<mapper resource="com/xing/model/Address.xml"/> -->
+
+		<!-- 多对一 -->
+		<!-- <mapper resource="com/xing/model2/yingshe.xml"/> -->
+		<!-- 1对多 -->
+		<!-- <mapper resource="com/xing/model3/yingshe.xml"/> -->
+	</mappers>
+</configuration>

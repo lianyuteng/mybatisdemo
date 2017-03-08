@@ -1,0 +1,64 @@
+2017-03-08 08:30:33,010 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@6536e911]
+ 2017-03-08 08:30:33,010 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,username,password) value(2226,'aaaa','cccc') 
+ 2017-03-08 08:30:33,025 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 08:34:04,469 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@6536e911]
+ 2017-03-08 08:34:04,469 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,username,password) value(2226,'aaaa','cccc') 
+ 2017-03-08 08:34:04,484 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 08:34:31,882 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@6536e911]
+ 2017-03-08 08:34:31,882 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,username,password) value(2226,'aaaa','cccc') 
+ 2017-03-08 08:34:31,897 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 08:35:32,306 [main] DEBUG [com.xing.model.User.add] - ooo Using Connection [com.mysql.jdbc.Connection@6c3708b3]
+ 2017-03-08 08:35:32,306 [main] DEBUG [com.xing.model.User.add] - ==>  Preparing: insert into user (id,username,password,type) value(?,?,?,?) 
+ 2017-03-08 08:35:32,353 [main] DEBUG [com.xing.model.User.delete] - ooo Using Connection [com.mysql.jdbc.Connection@551aa95a]
+ 2017-03-08 08:35:32,353 [main] DEBUG [com.xing.model.User.delete] - ==>  Preparing: delete from user where id = ? 
+ 2017-03-08 08:35:32,353 [main] DEBUG [com.xing.model.User.delete] - ==> Parameters: 2222(String)
+ 2017-03-08 08:35:32,353 [main] DEBUG [com.xing.model.User.delete] - <==    Updates: 0
+ 2017-03-08 08:35:32,353 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@551aa95a]
+ 2017-03-08 08:35:32,353 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,username,password) value(2226,'aaaa','cccc') 
+ 2017-03-08 08:35:32,353 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 08:53:05,728 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@6536e911]
+ 2017-03-08 08:53:05,730 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,username,password) value(2226,'aaaa','cccc') 
+ 2017-03-08 08:53:05,754 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 09:16:22,392 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@148080bb]
+ 2017-03-08 09:16:22,396 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,username,password) value(2226,'aaaa','cccc') 
+ 2017-03-08 09:16:22,420 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 09:21:17,869 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@148080bb]
+ 2017-03-08 09:21:17,873 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,username,password) value(22,'aaaa','cccc') 
+ 2017-03-08 09:21:17,900 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 09:22:01,575 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@148080bb]
+ 2017-03-08 09:22:01,579 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,username,password) value(22,'aaaa','cccc') 
+ 2017-03-08 09:22:01,605 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 09:22:40,092 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@148080bb]
+ 2017-03-08 09:22:40,096 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,username,password) value(22,'aaaa','cccc') 
+ 2017-03-08 09:22:40,123 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 09:23:20,098 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@148080bb]
+ 2017-03-08 09:23:20,102 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,name,password) value(22,'aaaa','cccc') 
+ 2017-03-08 09:23:20,129 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 09:23:20,130 [main] DEBUG [com.xing.model.User.add2] - <==    Updates: 1
+ 2017-03-08 09:33:16,273 [main] DEBUG [com.xing.model.User.add2] - ooo Using Connection [com.mysql.jdbc.Connection@148080bb]
+ 2017-03-08 09:33:16,277 [main] DEBUG [com.xing.model.User.add2] - ==>  Preparing: insert into user (id,name,password) value(22,'aaaa','cccc') 
+ 2017-03-08 09:33:16,303 [main] DEBUG [com.xing.model.User.add2] - ==> Parameters: 
+ 2017-03-08 09:33:16,305 [main] DEBUG [com.xing.model.User.add2] - <==    Updates: 1
+ 2017-03-08 09:33:42,306 [main] DEBUG [com.xing.model.User.add] - ooo Using Connection [com.mysql.jdbc.Connection@7e0b0338]
+ 2017-03-08 09:33:42,311 [main] DEBUG [com.xing.model.User.add] - ==>  Preparing: insert into user (id,username,password,type) value(?,?,?,?) 
+ 2017-03-08 09:33:42,354 [main] DEBUG [com.xing.model.User.delete] - ooo Using Connection [com.mysql.jdbc.Connection@335eadca]
+ 2017-03-08 09:33:42,354 [main] DEBUG [com.xing.model.User.delete] - ==>  Preparing: delete from user where id = ? 
+ 2017-03-08 09:33:42,355 [main] DEBUG [com.xing.model.User.delete] - ==> Parameters: 2222(String)
+ 2017-03-08 09:33:42,355 [main] DEBUG [com.xing.model.User.delete] - <==    Updates: 0
+ 2017-03-08 09:33:42,356 [main] DEBUG [com.xing.model.User.update] - ooo Using Connection [com.mysql.jdbc.Connection@335eadca]
+ 2017-03-08 09:33:42,357 [main] DEBUG [com.xing.model.User.update] - ==>  Preparing: update user set username=? ,password=?, type=? where id=? 
+ 2017-03-08 11:12:56,497 [main] DEBUG [com.xing.model.User.select] - ooo Using Connection [com.mysql.jdbc.Connection@3327bd23]
+ 2017-03-08 11:12:56,513 [main] DEBUG [com.xing.model.User.select] - ==>  Preparing: select username ,password,type,id from user u where u.id = ? 
+ 2017-03-08 11:12:56,545 [main] DEBUG [com.xing.model.User.select] - ==> Parameters: 22(String)
+ 2017-03-08 11:13:44,620 [main] DEBUG [com.xing.model.User.select] - ooo Using Connection [com.mysql.jdbc.Connection@3327bd23]
+ 2017-03-08 11:13:44,620 [main] DEBUG [com.xing.model.User.select] - ==>  Preparing: select username ,password,type,id from user u where u.id = ? 
+ 2017-03-08 11:13:44,651 [main] DEBUG [com.xing.model.User.select] - ==> Parameters: 22(String)
+ 2017-03-08 11:14:40,056 [main] DEBUG [com.xing.model.User.select] - ooo Using Connection [com.mysql.jdbc.Connection@3327bd23]
+ 2017-03-08 11:14:40,072 [main] DEBUG [com.xing.model.User.select] - ==>  Preparing: select name ,password,id from user u where u.id = ? 
+ 2017-03-08 11:14:40,087 [main] DEBUG [com.xing.model.User.select] - ==> Parameters: 22(String)
+ 2017-03-08 11:14:40,118 [main] DEBUG [com.xing.model.User.select] - <==      Total: 2
+ 2017-03-08 11:15:45,269 [main] DEBUG [com.xing.model.User.select] - ooo Using Connection [com.mysql.jdbc.Connection@3327bd23]
+ 2017-03-08 11:15:45,269 [main] DEBUG [com.xing.model.User.select] - ==>  Preparing: select name ,password,id from user u where u.id = ? 
+ 2017-03-08 11:15:45,300 [main] DEBUG [com.xing.model.User.select] - ==> Parameters: 22(String)
+ 2017-03-08 11:15:45,316 [main] DEBUG [com.xing.model.User.select] - <==      Total: 2
+ 
